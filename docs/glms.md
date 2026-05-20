@@ -1,0 +1,703 @@
+---
+layout: post
+title: "GlmS"
+date: 2022-01-01 00:00:00
+author: Ribocentre team
+permalink: /docs/glms.html
+---
+
+<p><strong>Rfam ID: <a href="https://rfam.org/family/RF00234">RF00234</a></strong> <br /></p>
+
+<h4 id="click-into-different-sections">click into different sections:</h4>
+
+<ul>
+  <li><a href="#timeline">Timeline</a></li>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#structure">Structure and mechanism</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+
+<h2 id="timeline">Timeline</h2>
+
+<hr />
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+
+</head>
+<style>
+   table {
+        border: 2px solid #f8f8ff;
+        border: 2px solid #767676;
+		    border: 2px solid #767676;
+		    border-radius: 5px;
+		    background-color: #fff;
+        }
+.timeline {
+  list-style: none;
+  padding: 10px 0 10px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 16px;
+  right: -12px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 10px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 10px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 40px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 48.5%;
+  margin-left: 0px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 0px;
+}
+
+</style>
+<!--<div class="container" width: 1026px></div>-->
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/15029187" target="_blank" style="font-size:25px;">2004 </a> Discovery,Secondary structure<sup>[1]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/16464827" target="_blank" style="font-size:25px;">2006 </a> Pseudoknot structure<sup>[2]</sup></h4>
+            </div>
+            <div class="timeline-body">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/16990543" target="_blank" style="font-size:25px;">2006 </a>  Crystal structure<sup>[3]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/17196404" target="_blank" style="font-size:25px;">2007 </a> Catalytic mechanism<sup>[4]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/18079181" target="_blank" style="font-size:25px;">2007 </a> Mechanism of mRNA destabilization by the GlmS ribozyme<sup>[6]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/19228039" target="_blank" style="font-size:25px;">2009 </a> Chemical Mechanism<sup>[7]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/20822574" target="_blank" style="font-size:25px;">2010 </a> Use of a small molecule coenzyme by a gene-regulatory RNA<sup>[8]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21108273" target="_blank" style="font-size:25px;">2010 </a>The role of Mg2+ in active sites<sup>[9]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21317896" target="_blank" style="font-size:25px;">2011 </a> The GlmS riboswitch integrates signals from activating and inhibitory metabolites in vivo<sup>[10]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21367971" target="_blank" style="font-size:25px;">2011 </a> An expanded collection and refined consensus model of GlmS ribozymes<sup>[11]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/23113700" target="_blank" style="font-size:25px;">2012 </a> The GlmS ribozyme cofactor is a general acid-base catalyst<sup>[12]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/24096303" target="_blank" style="font-size:25px;">2013 </a> An in vitro evolved GlmS ribozyme has the wild-type fold but loses coenzyme dependence<sup>[13]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/28192411" target="_blank" style="font-size:25px;">2017 </a> GlcN6P cofactor play a variety of catalytic roles in GlmS ribozyme<sup>[15]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/29265590" target="_blank" style="font-size:25px;">2018 </a> The GlmS ribozyme could be used as a tool to study essential genes in T. brucei<sup>[16]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/32245964" target="_blank" style="font-size:25px;">2020 </a> Comprehensive sequence-to-function mapping of cofactor-dependent RNA catalysis in the GlmS ribozyme<sup>[17]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/34734706" target="_blank" style="font-size:25px;">2021 </a> The GlmS ribozyme is a very suitable target for antibacterial drug development with antisense oligonucleotides<sup>[18]</sup></h4>
+            </div>
+          </div>
+        </li>
+    </ul>
+
+</html>
+
+<h2 id="description">Description</h2>
+
+<hr />
+
+<font size="4">The hairpin ribozyme and substrate originate from satellite RNAs associated with three different plant RNA viruses . These are the negative strands of the satellite RNAs from tobacco ringspot virus (sTRSV), chicory yellow mottle virus type 1 (sCYMV1), and arabis mosaic virus (sArMV). These satellite RNAs are singlestranded RNA molecules that replicate via a rolling circle mechanism. The catalytic center of this satellite RNA was determined, reducing the number of nucleotides necessary for catalysis to a 50nt ribozyme cutting a 14nt substrate in a trans reaction. The overall secondary structure of this catalytic center was hairpin-like and was therefore named the hairpin ribozyme.</font>
+<p><br /></p>
+
+<h2 id="structure">Structure and mechanism</h2>
+
+<hr />
+
+<blockquote>
+  <p>2D representation</p>
+</blockquote>
+
+Secondary structure depictions of the GlmS ribozyme with the scissile phosphates (blue) arrowed and the base (blue) and cofactor Glc6P(red) are shown. 
+<p><br /></p>
+
+<table><tr>
+<td>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<style>
+   body {
+    width: 100%;
+    height: 100vh;
+}
+   button {
+   margin-right: 0px;
+}
+   .main-container {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+   .zoom-wrapper1 {
+    width: 450px;
+    height: 400px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+    <div class="main-container">
+        <div class="zoom-wrapper1">
+            <div class="zoom-area1">
+                <img src="/images/glmsPic/glms2D.svg" alt="drawing" style="height:160px" />
+            </div>
+        </div>
+    </div>
+    <script src="/js/panzoom.js"></script>
+    <script type="text/javascript">
+      var zoomWraper1 = document.querySelector(".zoom-wrapper1");
+      var panzoom1 = Panzoom(document.querySelector(".zoom-area1"), {
+      maxScale: 6
+      });
+      zoomWraper1.addEventListener("wheel", panzoom1.zoomWithWheel);
+      panzoom1.zoom(300 / document.querySelector(".zoom-area1 img").height);
+      panzoom2.pan(0, 0);
+      </script>
+</td>
+<td>
+<link rel="stylesheet" type="text/css" href="/css/fornac.css" media="screen" />
+
+<div id="custom_colors"></div>
+<form onsubmit="return handleCustomColorApply()" class="optionsform">
+  <textarea id="CustomColorText" name="hide" textarea="" style="display:none;">
+    9-19:#00ADEF 30-40:#00ADEF 61:#ED1B23 66:#ED1B23
+    43-45:#ED1B23 58-60:#ED1B23 49-54:#ED1B23 75-80:#ED1B23 4-8:#ED1B23 67-71:#ED1B23 
+    81-85:#EA99C2 93-97:#EA99C2 87-92:#EA99C2 146-151:#EA99C2 102-109:#009343 136-143:#009343 112-120:#009343 125-133:#009343
+  </textarea>
+</form>
+<meta charset="utf-8" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/d3.js"></script>
+    <script type="text/javascript" src="/js/demo/rsvfornac.js"></script>
+    <script type="text/javascript">
+      "use strict"
+      function customColorsContainer() {
+         let container = new fornac.FornaContainer("#custom_colors",
+                 {'applyForce': 1,'editable':'true', 'initialSize':[450,400]});
+         let options = {'structure': '...((((([[[[[[[[[[[..........]]]]]]]]]]]..(((...[[[[[[...)))[....])))))...]]]]]](((((.[[[[[[)))))....((((((((..[[[[[[[[[....]]]]]]]]]..))))))))..]]]]]].',
+                         'sequence': 'AGCGCCUGGACUUAAAGCCAUUGCACUCCGGCUUUAAGUUGACGAGGGCAGGGUUUAUCGAGACAUCGGCGGGUGCCCUGCGGUCUUCCUGCGACCGUUAGAGGACUGGUAAAACCACAGGCGACUGUGGCAUAGAGCAGUCCGGGCAGGAA'
+         };
+         container.addRNA(options.structure, options);
+         return container;
+     }
+     let cc = customColorsContainer();
+ 
+     function handleCustomColorApply() {
+       cc.addCustomColorsText(document.getElementById("CustomColorText").value);
+       return false;
+     }
+     handleCustomColorApply();
+ 
+  </script>
+  </td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>3D visualisation</p>
+</blockquote>
+
+The structure of the GlmS ribozyme bound to glucose-6-phosphate. This representation was generated from PDB ID: 2HO7 at 2.9 Å resolution. 
+
+<table><tr>
+<td><img src="/images/glmsPic/glms3D.png" alt="drawing" style="weight:600px;height:425px" border="0" /></td>
+<td>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+      <title>PDBe Molstar - Helper functions</title>
+  
+      <!-- Molstar CSS & JS -->
+      <link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-3.0.0.css">
+      <script type="text/javascript" src="https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-plugin-3.0.0.js"></script>
+      <script>
+        function customize()
+        {
+          viewerInstance.canvas.setBgColor({r:255, g:255, b:255})
+        }
+        </script>
+  
+  
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .msp-plugin ::-webkit-scrollbar-thumb {
+            background-color: #474748 !important;
+        }
+        .viewerSection {
+          padding-top: 0px;
+        }
+        .controlsSection {
+          width: 300px;
+          display: flex;
+          float:left;
+          padding: 0px 0 0 0;
+          height:25px;
+        }
+        .controlBox {
+          border: 0px solid lightgray;
+          padding: 0px;
+          margin-bottom: 0px;
+        }
+        #myViewer{
+          float:left;
+          width:450px;
+          height: 455px;
+          position:relative;
+        }
+  </style>
+  </head>
+  <body onload="customize()">
+    <div class="controlsSection">
+        <button onclick="
+          var selectSections = [
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 8, 
+                end_residue_number: 13, 
+                color:{r:43,g:250,b:250},
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 14, 
+                end_residue_number: 18, 
+                color:{r:237,g:27,b:35}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 19, 
+                end_residue_number: 26, 
+                color:{r:237,g:27,b:35}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 35, 
+                end_residue_number: 37, 
+                color:{r:237,g:27,b:35}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 26, 
+                end_residue_number: 31, 
+                color:{r:237,g:27,b:35}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 52, 
+                end_residue_number: 53, 
+                color:{r:237,g:27,b:35}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 2, 
+                end_residue_number: 7, 
+                color:{r:43,g:250,b:250}
+              },
+              {
+                struct_asym_id: 'A', 
+                start_residue_number: 1, 
+                end_residue_number: 21, 
+                color:{r:43,g:250,b:250}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 32, 
+                end_residue_number: 51, 
+                color:{r:237,g:27,b:35}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 58, 
+                end_residue_number: 62, 
+                color:{r: 234,g: 153,b: 194}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 70, 
+                end_residue_number: 74, 
+                color:{r: 234,g: 153,b: 194}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 54, 
+                end_residue_number: 69, 
+                color:{r: 234,g: 153,b: 194}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 123, 
+                end_residue_number: 128, 
+                color:{r: 234,g: 153,b: 194}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 75, 
+                end_residue_number: 86, 
+                color:{r:0,g:243,b:0}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 118, 
+                end_residue_number: 122, 
+                color:{r: 234,g: 153,b: 194}
+              },
+              {
+                struct_asym_id: 'B', 
+                start_residue_number: 87, 
+                end_residue_number: 117, 
+                color:{r:0,g:243,b:0}
+              }
+          ]
+          viewerInstance.visual.select({ data: selectSections, nonSelectedColor: {r:255,g:255,b:255}})" style="float:right;height:25px;">Color Selection</button><br><br>
+  
+        <button button style="float: left;height:25px;" onclick="viewerInstance.visual.clearSelection()">Clear Selection</button><br><br>
+  
+    </div>
+  
+    <div class="viewerSection">
+  
+      <!-- Molstar container -->
+      <div id="myViewer"></div>
+      
+    </div>
+    <script>
+  
+      //Create plugin instance
+      var viewerInstance = new PDBeMolstarPlugin();
+  
+      //Set options (Checkout available options list in the documentation)
+      var options = {
+        moleculeId: '2ho7',
+        hideControls: true
+      }
+      
+      //Get element from HTML/Template to place the viewer 
+      var viewerContainer = document.getElementById('myViewer');
+  
+      //Call render method to display the 3D view
+      viewerInstance.render(viewerContainer, options);
+      
+    </script>
+  </body>
+
+</html></td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>Catalytic centre</p>
+</blockquote>
+
+<p>Close view of the catalytic center of the ribozyme. The A-0 O2' is positioned for inline nucleophilic attack (broken red line). G40 N1 is well placed to act as general base. An amino group has been modeled onto Glc6P to generate glucosamine-6-phosphate; this amine is positioned to act as general acid to protonate the G-1 O5' -leaving group.<br /></p>
+
+<p>The proposed catalytic mechanism of the GlmS ribozyme. In the nucleolytic cleavage reaction the 2'-OH of a ribose acts as the nucleophile, attacking the scissile phosphate and releasing the 5'-oxygen leaving group. This reaction requires an in-line (180°) conformation for the 2'-OH, scissile phosphate and 5'-oxygen. In the GlmS ribozyme, a guanosine has been implicated in the reaction mechanism.<br /></p>
+<table><tr>
+<td><img src="/images/glmsPic/glms-m1.png" alt="drawing" style="width:450px;height:350px" border="1" px="" /></td>
+<td><img src="/images/glmsPic/glms-m2.png" alt="drawing" style="width:450px;height:260px" border="1" px="" /></td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>Chemical mechanism</p>
+</blockquote>
+
+<p>Uniquely GlmS is a ribozyme that uses a co-enzyme, and is both a riboswitch and a ribozyme. GlmS exploits its glucosamine-6-phosphate (Glc6P) ligand as a participant in the chemistry of the catalysis of phosphoryl transfer.  The riboswitch was found to undergo self-cleavage, creating 5'-OH and cyclic 2'3'-termini<sup> [1]</sup>. The activity required the presence of Glc6P, with half-maximal activity at ~200 μM. GlmS was found to be active in the presence of a number of divalent metal ions, and also active in high concentrations of monovalent metal ions and Co(III) hexammine <sup>[19]</sup>, indicating that no direct involvement of a metal ion is likely. In the crystal <sup>[3,4,7]</sup> the amine of the Glc6P is 2.9Å from the O5' leaving group, so well positioned to act as general acid. The pKa of the amine is 8.2 and so Glc6P should readily donate a proton to the O5’ oxyanion.  G40 N1 (in B. subtilis; the corresponding nucleotide in B. anthracis is G33) is 3.2 Å from the O2' nucleophile, suggesting a role as general base. A GlmS G40A mutant ribozyme was severely impaired in cleavage, with a rate of kobs = 5 x 10<sup>-5</sup> min<sup>-1</sup> <sup>[5]</sup>. The rate of cleavage was found to depend on pH, but because the binding of the ligand is pH dependent, this is difficult to interpret unfortunately. However the probable mechanism of the GlmS ribozyme is general acid-base catalysis, with a guanine N1 as general base and the amine of the exogenous Glc6P ligand acting as general acid.</p>
+
+<h2 id="references">References</h2>
+
+<hr />
+
+<p><strong>[1] Control of gene expression by a natural metabolite-responsive ribozyme</strong><br />
+Winkler, W., A. Nahvi, A. Roth, J. Collins and R. Breaker <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/15029187" target="_blank">Nature 428(6980): 281-286.(2004)</a><br /><br /></p>
+
+<p><strong>[2] Core requirements for glmS ribozyme self-cleavage reveal a putative pseudoknot structure.</strong><br />
+Soukup, G. <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/16464827" target="_blank">Nucleic acids research 34(3): 968-975.(2006).</a><br /><br /></p>
+
+<p><strong>[3] Structural basis of glmS ribozyme activation by glucosamine-6-phosphate.</strong><br />
+Klein, D. and A. Ferré-D'Amaré <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/16990543" target="_blank">Science (New York, N.Y.) 313(5794): 1752-1756.(2006)</a><br /><br /></p>
+
+<p><strong>[4] Structural investigation of the GlmS ribozyme bound to Its catalytic cofactor.</strong><br />
+Cochrane, J., S. Lipchock and S. Strobel <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/17196404" target="_blank">Chemistry &amp; biology 14(1): 97-105.(2007)</a><br /><br /></p>
+
+<p><strong>[5] Essential role of an active-site guanine in glmS ribozyme catalysis.</strong><br />
+Klein, D., M. Been and A. Ferré-D'Amaré <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/17990888" target="_blank">Journal of the American Chemical Society 129(48): 14858-14859.(2007)</a><br /><br /></p>
+
+<p><strong>[6] Mechanism of mRNA destabilization by the glmS ribozyme.</strong><br />
+Collins, J., I. Irnov, S. Baker and W. Winkler <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/18079181" target="_blank">Genes &amp; development 21(24): 3356-3368.(2007)</a><br /><br /></p>
+
+<p><strong>[7] Structural and chemical basis for glucosamine 6-phosphate binding and activation of the glmS ribozyme.</strong><br />
+Cochrane, J., S. Lipchock, K. Smith and S. Strobel <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/19228039" target="_blank">Biochemistry 48(15): 3239-3246.(2009)</a><br /><br /></p>
+
+<p><strong>[8] The glmS ribozyme: use of a small molecule coenzyme by a gene-regulatory RNA.</strong><br />
+Ferré-D'Amaré, A.<br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/20822574" target="_blank">Quarterly reviews of biophysics 43(4): 423-447.(2010)</a><br /><br /></p>
+
+<p><strong>[9] Analysis of metal ion dependence in glmS ribozyme self-cleavage and coenzyme binding.</strong><br />
+Klawuhn, K., J. Jansen, J. Souchek, G. Soukup and J. Soukup <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/21108273" target="_blank">Chembiochem : a European journal of chemical biology 11(18): 2567-2571.(2010)</a><br /><br /></p>
+
+<p><strong>[10] The glmS riboswitch integrates signals from activating and inhibitory metabolites in vivo.</strong><br />
+Watson, P. and M. Fedor<br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/21317896" target="_blank">Nature structural &amp; molecular biology 18(3): 359-363.(2011)</a><br /><br /></p>
+
+<p><strong>[11] An expanded collection and refined consensus model of glmS ribozymes.</strong><br />
+McCown, P., A. Roth and R. Breaker <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/21367971" target="_blank">RNA (New York, N.Y.) 17(4): 728-736.(2011)</a><br /><br /></p>
+
+<p><strong>[12] The glmS ribozyme cofactor is a general acid-base catalyst.</strong><br />
+Viladoms, J. and M. Fedor <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/23113700" target="_blank">Journal of the American Chemical Society 134(46): 19043-19049.(2012)</a><br /><br /></p>
+
+<p><strong>[13] An in vitro evolved glmS ribozyme has the wild-type fold but loses coenzyme dependence.</strong><br />
+Lau, M. W. L. and A. R. Ferré-D Amaré <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/24096303" target="_blank">Nature Chemical Biology 9(12): 805.(2013)</a><br /><br /></p>
+
+<p><strong>[14] Activation of the glmS Ribozyme Confers Bacterial Growth Inhibition.</strong><br />
+Schüller, A., D. Matzner, C. Lünse, V. Wittmann, C. Schumacher, S. Unsleber, H. Brötz-Oesterhelt, C. Mayer, G. Bierbaum and G. Mayer <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/28012261" target="_blank">Chembiochem : a European journal of chemical biology 18(5): 435-440.(2017)</a><br /><br /></p>
+
+<p><strong>[15] The GlcN6P cofactor plays multiple catalytic roles in the glmS ribozyme.</strong><br />
+Bingaman, J., S. Zhang, D. Stevens, N. Yennawar, S. Hammes-Schiffer and P. Bevilacqua <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/28192411" target="_blank">Nature chemical biology 13(4): 439-445.(2017)</a><br /><br /></p>
+
+<p><strong>[16] A Riboswitch-based Inducible Gene Expression System for Trypanosoma brucei.</strong><br />
+Cruz-Bustos, T., S. Ramakrishnan, C. Cordeiro, M. Ahmed and R. Docampo <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/29265590" target="_blank">The Journal of eukaryotic microbiology 65(3): 412-421.(2018)</a><br /><br /></p>
+
+<p><strong>[17] Comprehensive sequence-to-function mapping of cofactor-dependent RNA catalysis in the glmS ribozyme.</strong><br />
+Andreasson, J., A. Savinov, S. Block and W. Greenleaf<br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/32245964" target="_blank">Nature communications 11(1): 1663.(2020)</a><br /><br /></p>
+
+<p><strong>[18] Targeting glmS Ribozyme with Chimeric Antisense Oligonucleotides for Antibacterial Drug Development.</strong><br />
+Traykovska, M., K. Popova and R. Penchovsky<br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/34734706" target="_blank">ACS synthetic biology 10(11): 3167-3176.(2021)</a><br /><br /></p>
+
+<p><strong>[19] Characteristics of the glmS ribozyme suggest only structural roles for divalent metal ions.</strong><br />
+Roth, A., Nahvi, A., Lee, M., Jona, I. and Breaker, R.R.<br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/16484375" target="_blank">RNA, 12, 607-619(2006)</a><br /><br /></p>

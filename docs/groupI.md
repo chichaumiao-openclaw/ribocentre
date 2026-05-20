@@ -1,0 +1,750 @@
+---
+layout: post
+title: "Group I self-splicing intron"
+date: 2022-01-01 00:00:00
+author: Ribocentre team
+permalink: /docs/groupI.html
+---
+
+<p><strong>Rfam ID: <a href="https://rfam.org/family/RF00028">RF00028</a></strong> <br /></p>
+
+<h4 id="click-into-different-sections">click into different sections:</h4>
+
+<ul>
+  <li><a href="#timeline">Timeline</a></li>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#structure">Structure and mechanism</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+
+<h2 id="timeline">Timeline</h2>
+
+<hr />
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+
+</head>
+<style>
+   table {
+        border: 2px solid #f8f8ff;
+        border: 2px solid #767676;
+		    border: 2px solid #767676;
+		    border-radius: 5px;
+		    background-color: #fff;
+        }
+.timeline {
+  list-style: none;
+  padding: 10px 0 10px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 16px;
+  right: -12px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 10px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 10px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 40px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 48.5%;
+  margin-left: 0px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 0px;
+}
+
+</style>
+<!--<div class="container" width: 1026px></div>-->
+    <ul class="timeline">
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/6297745" target="_blank" style="font-size:25px;">1982</a> Discovery<sup>[1]</sup></h4> 
+            </div>
+            <div class="timeline-body">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/6757759" target="_blank" style="font-size:25px;">1982</a> Determination of shared secondary structure<sup>[2]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/3941911" target="_blank" style="font-size:25px;">1986</a> The intervening sequence RNA of <em>Tetrahymena</em> is an enzyme<sup>[3]</sup></h4>
+            </div>
+            <div class="timeline-body">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/3209068" target="_blank" style="font-size:25px;">1988</a> ωG is closely related to the choice of 3' splice site<sup>[4]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/2258934" target="_blank" style="font-size:25px;">1990</a> 3D models of  group I intron based on comparative sequence analysis<sup>[8]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/8781224" target="_blank" style="font-size:25px;">1996</a> Crystal structure of <em>Tetrahymena</em> P4-P6 domain<sup>[9]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/9841391" target="_blank" style="font-size:25px;">1998</a> Crystal structure of an engineered, active <em>Tetrahymena</em> ribozyme at 5.0 Å resolution<sup>[10]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/15175762" target="_blank" style="font-size:25px;">2004</a> Crystal structure of <em>Azoarcus</em> group I intron with both exons<sup>[11]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/15525509" target="_blank" style="font-size:25px;">2004</a> Crystal structure of an active <em>Tetrahymena</em> ribozyme<sup>[12]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/15580277" target="_blank" style="font-size:25px;">2005</a> Crystal structure of  phage Twort group I ribozyme-product complex<sup>[13]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/16141079" target="_blank" style="font-size:25px;">2005</a> Crystal structure of a catalytically active <em>Azoarcus</em> group I intron splicing intermediate<sup>[14]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/17942415" target="_blank" style="font-size:25px;">2008</a> Sequence and structure database<sup>[15]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21815635" target="_blank" style="font-size:25px;">2011</a> Long-range tertiary contacts in RNA exhibit distinct catalytic roles<sup>[16]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="https://www.ncbi.nlm.nih.gov/pubmed/34381213" target="_blank" style="font-size:25px;">2021</a> Cryo-EM structures of full-length <em>Tetrahymena</em> ribozyme<sup>[17]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/35501384" target="_blank" style="font-size:25px;">2022</a> <em>Tetrahymena</em> group I intron at 2.98-Å resolution overall (2.85 Å for the core)<sup>[18]</sup></h4>
+            </div>
+          </div>
+        </li>
+    </ul>
+
+</html>
+
+<h2 id="description">Description</h2>
+
+<hr />
+
+<font size="4">Group I introns are large self-splicing ribozymes. They catalyze their own excision from mRNA, tRNA and rRNA precursors in a wide range of organisms. The core secondary structure consists of nine paired regions (P1-P9). These fold to essentially two domains—the P4-P6 domain (formed from the stacking of P5, P4, P6 and P6a helices) and the P3-P9 domain (formed from the P8, P3, P7 and P9 helices). The secondary structure mark-up for this family represents only this conserved core. Group I introns often have long open reading frames inserted in loop regions</font>
+<p><br /></p>
+
+<h2 id="structure">Structure and mechanism</h2>
+
+<hr />
+
+<blockquote>
+  <p>2D representation</p>
+</blockquote>
+
+<font size="4">Secondary structure of the apo L-21 ScaI <em>Tetrahymena</em> ribozyme based on the cryo-EM model, a linear form of the self-splicing intron without its first 21 nucleotides (nts 22–409) 
+ </font>
+<p><br /></p>
+
+<table><tr>
+<td>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<style>
+   body {
+    width: 100%;
+    height: 100vh;
+}
+   button {
+   margin-right: 0px;
+}
+   .main-container {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+   .zoom-wrapper1 {
+    width: 450px;
+    height: 400px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+    <div class="main-container">
+        <div class="zoom-wrapper1">
+            <div class="zoom-area1">
+                <img src="/images/groupIPic/groupI2D.svg" alt="drawing" style="height:160px" />
+            </div>
+        </div>
+    </div>
+    <script src="/js/panzoom.js"></script>
+    <script type="text/javascript">
+      var zoomWraper1 = document.querySelector(".zoom-wrapper1");
+      var panzoom1 = Panzoom(document.querySelector(".zoom-area1"), {
+      maxScale: 6
+      });
+      zoomWraper1.addEventListener("wheel", panzoom1.zoomWithWheel);
+      panzoom1.zoom(300 / document.querySelector(".zoom-area1 img").height);
+      panzoom2.pan(0, 0);
+      </script>
+</td>
+<td>
+<link rel="stylesheet" type="text/css" href="/css/fornac.css" media="screen" />
+<div id="custom_colors"></div>
+<form onsubmit="return handleCustomColorApply()" class="optionsform">
+  <!--<textarea id="CustomColorText" name="hide" textarea="" style="display:none;">
+    10-21 #1A62AF 25-35: #1A62AF 61-72:#83556E 37-47: #83556E 251-257:#E6CA5A 75-81:#E6CA5A
+22-24:#2BAC38 148-151:#2BAC38 106-147: #74C8D5 152-174:#74C8D5 179-184: #E7312B  95-100: #E7312B  1-6:#D09F9F 21:#D09F9F
+187-193:#E27E28 86-91:#E27E28 194-237:#78789F 242-247:#C17575 286-293:#C17575 258-278:#543C94 297-310:#6B216E
+384-385:#003692 294-295:#003692 332-346:#CFAC89 311-325:#CFAC89 348-381:#E62380 54-60:#86B133 52:#86B133 326-331:#86B133
+  </textarea>-->
+  <textarea id="CustomColorText" name="hide" textarea="" style="display:none;">
+    25-35:#3776AD 10-21:#3776AD 61-72:#BF85A5 37-47:#BF85A5 251-257:#E6CA5A 75-81:#E6CA5A
+22-24:#2BAC38 148-151:#2BAC38 106-147:#74C8D5 152-174:#74C8D5 179-184:#E7312B  95-100:#E7312B  1-6:#816160 
+187-193:#E27E28 86-91:#E27E28 194-237:#78789F 241-247:#D08383 286-293:#D08383 258-278:#543C94 297-310:#8A3A84
+384-385:#003692 294-295:#003692 332-346:#CFAC89 311-325:#CFAC89 348-381:#E62380 54-60:#86B133 52:#86B133 326-331:#86B133
+  </textarea>
+</form>
+<meta charset="utf-8" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/d3.js"></script>
+    <script type='text/javascript' src='/js/demo/rsvfornac.js'></script>
+    <script type="text/javascript">
+      "use strict"
+      function customColorsContainer() {
+         let container = new fornac.FornaContainer("#custom_colors",
+                 {'applyForce': 1,'editable':'true', 'initialSize':[450,400]});
+         let options = {'structure': '.........((((((((((..[[[.)))))))))).(((((((((((....(.{{{{{.))))))).)))))..(((((.(....((((((...((((((.....(((.((((.(((..(((((((((....)))))))))..((..]].].))....)))......)))))))....))))))..)).)))).(...((((...((((((((.....))))))))..))))...)....[.[[[[[...).))))).(((((((.....)))))))........]]]]]]..((.(((((....)))))(((((((.....(((.}}}}}))).....))))))).((((((((..(((((....)))))..))))))))..))..',
+             'sequence':             'GGAGGGAAAAGUUAUCAGGCAUGCACCUGGUAGCUAGUCUUUAAACCAAUAGAUUGCAUCGGUUUAAAAGGCAAGACCGUCAAAUUGCGGGAAAGGGGUCAACAGCCGUUCAGUACCAAGUCUCAGGGGAAACUUUGAGAUGGCCUUGCAAAGGGUAUGGUAAUAAGCUGACGGACAUGGUCCUAACCACGCAGCCAAGUCCUAAGUCAACAGAUCUUCUGUUGAUAUGGAUGCAGUUCACAGACUAAAUGUCGGUCGGGGAAGAUGUAUUCUUCUCAUAAGAUAUAGUCGGACCUCUCCUUAAUGGGAGCUAGCGGAUGAAGUGAUGCAACACUGGAGCCGCUGGGAACUAAUUUGUAUGCGAAAGUAUAUUGAUUAGUUUUGGAG'
+         };
+         container.addRNA(options.structure, options);
+         return container;
+     }
+     let cc = customColorsContainer();
+ 
+     function handleCustomColorApply() {
+       cc.addCustomColorsText(document.getElementById("CustomColorText").value);
+       return false;
+     }
+     handleCustomColorApply();
+ 
+     </script>
+</td>
+</tr></table>
+<p><br /></p>
+\
+<blockquote>
+  <p>3D visualisation</p>
+</blockquote>
+
+<font size="4">Cryo-EM structures of full-length <em>Tetrahymena</em> ribozyme. The overall structure of the Apo L-21 ScaI <em>Tetrahymena</em> ribozyme was generated from PDB ID:7EZ0 at 3.1 Å resolution. </font>
+
+<table><tr>
+<td><img src="/images/groupIPic/20220806-groupI3D.png" alt="drawing" style="weight:600px;height:400px" border="0" /></td>
+<td>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+      <title>PDBe Molstar - Helper functions</title>
+  
+      <!-- Molstar CSS & JS -->
+      <link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-3.0.0.css">
+      <script type="text/javascript" src="https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-plugin-3.0.0.js"></script>
+      <script>
+        function customize()
+        {
+          viewerInstance.canvas.setBgColor({r:255, g:255, b:255})
+        }
+        </script>
+  
+  
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .msp-plugin ::-webkit-scrollbar-thumb {
+            background-color: #474748 !important;
+        }
+        .viewerSection {
+          padding-top: 0px;
+        }
+        .controlsSection {
+          width: 300px;
+          display: flex;
+          float:left;
+          padding: 0px 0 0 0;
+          height:25px;
+        }
+        .controlBox {
+          border: 0px solid lightgray;
+          padding: 0px;
+          margin-bottom: 0px;
+        }
+        #myViewer{
+          float:left;
+          width:450px;
+          height: 455px;
+          position:relative;
+        }
+  </style>
+  </head>
+  <body onload="customize()">
+    <div class="controlsSection">
+        <button onclick="
+          var selectSections = [
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 10, 
+              end_residue_number: 21, 
+              color:{r:55,g:118,b:173}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 25, 
+              end_residue_number: 35, 
+              color:{r:55,g:118,b:173}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 61, 
+              end_residue_number: 72, 
+              color:{r:191,g:133,b:165}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 37, 
+              end_residue_number: 47, 
+              color:{r:191,g:133,b:165}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 251, 
+              end_residue_number: 257, 
+              color:{r:230,g:202,b:90}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 75, 
+              end_residue_number: 81, 
+              color:{r:230,g:202,b:90}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 22, 
+              end_residue_number: 24, 
+              color:{r:43,g:172,b:56}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 148, 
+              end_residue_number: 151, 
+              color:{r:43,g:172,b:56}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 106, 
+              end_residue_number: 147, 
+              color:{r:116,g:200,b:213}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 152, 
+              end_residue_number: 174, 
+              color:{r:116,g:200,b:213}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 179, 
+              end_residue_number: 184, 
+              color:{r:231,g:49,b:43}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 95, 
+              end_residue_number: 100, 
+              color:{r:231,g:49,b:43}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 1, 
+              end_residue_number: 6, 
+              color:{r:129,g:97,b:96}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 187, 
+              end_residue_number: 193, 
+              color:{r:226,g:126,b:40}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 86, 
+              end_residue_number: 91, 
+              color:{r:226,g:126,b:40}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 194, 
+              end_residue_number: 237, 
+              color:{r:170,g:169,b:212}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 241, 
+              end_residue_number: 247, 
+              color:{r:208,g:131,b:131}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 286, 
+              end_residue_number: 293, 
+              color:{r:208,g:131,b:131}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 258, 
+              end_residue_number: 278, 
+              color:{r:84,g:60,b:148}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 297, 
+              end_residue_number: 310, 
+              color:{r:138,g:58,b:132}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 384, 
+              end_residue_number: 385, 
+              color:{r:0,g:54,b:146}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 294, 
+              end_residue_number: 295, 
+              color:{r:0,g:54,b:146}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 332, 
+              end_residue_number: 346, 
+              color:{r:207,g:172,b:137}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 311, 
+              end_residue_number: 325, 
+              color:{r:207,g:172,b:137}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 348, 
+              end_residue_number: 381, 
+              color:{r:230,g:35,b:128}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 54, 
+              end_residue_number: 60, 
+              color:{r:134,g:177,b:51}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 52, 
+              end_residue_number: 52, 
+              color:{r:134,g:177,b:51}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 326, 
+              end_residue_number: 331, 
+              color:{r:134,g:177,b:51}
+            }
+          ]
+          viewerInstance.visual.select({ data: selectSections, nonSelectedColor: {r:255,g:255,b:255}})" style="float:right;height:25px;">Color Selection</button><br><br>
+  
+        <button button style="float: left;height:25px;" onclick="viewerInstance.visual.clearSelection()">Clear Selection</button><br><br>
+  
+    </div>
+  
+    <div class="viewerSection">
+  
+      <!-- Molstar container -->
+      <div id="myViewer"></div>
+      
+    </div>
+    <script>
+  
+      //Create plugin instance
+      var viewerInstance = new PDBeMolstarPlugin();
+  
+      //Set options (Checkout available options list in the documentation)
+      var options = {
+        moleculeId: '7ez0',
+        hideControls: true
+      }
+      
+      //Get element from HTML/Template to place the viewer 
+      var viewerContainer = document.getElementById('myViewer');
+  
+      //Call render method to display the 3D view
+      viewerInstance.render(viewerContainer, options);
+      
+    </script>
+  </body>
+</html></td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>Catalytic centre</p>
+</blockquote>
+
+<p>The active centre of the ribozyme is composed of four layers of base triples.(PDB ID: 7EZ0)<br /></p>
+
+<p>The transition state of first step catalysis.MB binds to the 3’-hydroxyl group of the exogenous guanosine in the first step, functioning as a general base to activate the nucleophile. Another Mg<sup>2+</sup> (MA) stabilizes the 3’-leaving group, acting as a general acid. These two metal ions exchange their roles in the second step reaction, of which MA functions as the general base and MB as the general acid.<br /></p>
+
+<table><tr>
+<td><img src="/images/groupIPic/groupI-m1.png" alt="drawing" style="width:480px;height:400px" border="1" px="" /></td>
+<td><img src="/images/groupIPic/groupI-m2.png" alt="drawing" style="width:420px;height:400px" border="1" px="" /></td>
+</tr></table>
+<p><br /></p>
+
+<h2 id="references">References</h2>
+
+<hr />
+
+<p><strong>[1] Self-splicing RNA: autoexcision and autocyclization of the ribosomal RNA intervening sequence of <em>Tetrahymena</em>.</strong><br />
+Kruger, K., P. J. Grabowski, A. J. Zaug, J. Sands, D. E. Gottschling and T. R. Cech <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/6297745" target="_blank">Cell 31 (1): 147-57.(1982)</a><br /><br />
+<strong>[2] Making ends meet: a model for RNA splicing in fungal mitochondria.</strong><br />
+Davies, R. W., R. B. Waring, J. A. Ray, T. A. Brown and C. Scazzocchio <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/6757759" target="_blank">Nature 300 (5894): 719-24.(1982)</a><br /><br />
+<strong>[3] The intervening sequence RNA of <em>Tetrahymena</em> is an enzyme.</strong><br />
+Zaug, A. J. and T. R. Cech <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/3941911" target="_blank">Science 231 (4737): 470-5.(1986)</a><br /><br />
+<strong>[4] Determinants of the 3’ splice site for self-splicing of the <em>Tetrahymena</em> pre-rRNA.</strong><br />
+Price, J. V. and T. R. Cech <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/3209068" target="_blank">Genes Dev 2 (11): 1439-47.(1988)</a><br /><br />
+<strong>[5] Compensatory mutations demonstrate that P8 and P6 are RNA secondary structure elements important for processing of a group I intron.</strong><br />
+Williamson, C. L., N. M. Desai and J. M. Burke <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/2915927" target="_blank">Nucleic Acids Res 17 (2): 675-89.(1989)</a><br /><br />
+<strong>[6] RNA structure, not sequence, determines the 5' splice-site specificity of a group I intron.</strong><br />
+Doudna, J. A., B. P. Cormack and J. W. Szostak <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/2678103" target="_blank">Proc Natl Acad Sci U S A 86 (19): 7402-6.(1989)</a><br /><br />
+<strong>[7] A conserved base pair within helix P4 of the <em>Tetrahymena</em> ribozyme helps to form the tertiary structure required for self-splicing.</strong><br />
+Flor, P. J., J. B. Flanegan and T. R. Cech <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/2684642" target="_blank">EMBO J 8 (11): 3391-9.(1989)</a><br /><br />
+<strong>[8] Modelling of the three-dimensional architecture of group I catalytic introns based on comparative sequence analysis.</strong><br />
+Michel, F. and E. Westhof <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/2258934" target="_blank">J Mol Biol 216 (3): 585-610.(1990)</a><br /><br />
+<strong>[9] Crystal structure of a group I ribozyme domain: principles of RNA packing.</strong><br />
+Cate, J. H., A. R. Gooding, E. Podell, K. Zhou, B. L. Golden, C. E. Kundrot, T. R. Cech and J. A. Doudna <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/8781224" target="_blank">Science 273 (5282): 1678-85.(1996)</a><br /><br />
+<strong>[10] A preorganized active site in the crystal structure of the <em>Tetrahymena</em> ribozyme.</strong><br />
+Golden, B. L., A. R. Gooding, E. R. Podell and T. R. Cech <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/9841391" target="_blank">Science 282 (5387): 259-64.(1998)</a><br /><br />
+<strong>[11] Crystal structure of a self-splicing group I intron with both exons.</strong><br />
+Adams, P. L., M. R. Stahley, A. B. Kosek, J. Wang and S. A. Strobel <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/15175762" target="_blank">Nature 430 (6995): 45-50.(2004)</a><br /><br />
+<strong>[12] Structure of the <em>Tetrahymena</em> ribozyme: base triple sandwich and metal ion at the active site.</strong><br />
+Guo, F., A. R. Gooding and T. R. Cech <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/15525509" target="_blank">Mol Cell 16 (3): 351-62.(2004)</a><br /><br />
+<strong>[13] Crystal structure of a phage Twort group I ribozyme-product complex.</strong><br />
+Golden, B. L., H. Kim and E. Chase <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/15580277" target="_blank">Nat Struct Mol Biol 12 (1): 82-9.(2005)</a><br /><br />
+<strong>[14] Structural evidence for a two-metal-ion mechanism of group I intron splicing.</strong><br />
+Stahley, M. R. and S. A. Strobel <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/16141079" target="_blank">Science 309 (5740): 1587-90.(2005)</a><br /><br />
+<strong>[15] GISSD: Group I Intron Sequence and Structure Database.</strong><br />
+Zhou, Y., C. Lu, Q. J. Wu, Y. Wang, Z. T. Sun, J. C. Deng and Y. Zhang <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/17942415" target="_blank">Nucleic Acids Res 36 (Database issue): D31-7.(2008)</a><br /><br /></p>
+
+<p><strong>[16] Structure-function analysis from the outside in: long-range tertiary contacts in  RNA exhibit distinct catalytic roles.</strong><br />
+Benz-Moy, T. L. and D. Herschlag <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/21815635" target="_blank">Biochemistry 50 (40): 8733-55.(2011)</a><br /><br />
+<strong>[17] Cryo-EM structures of full-length <em>Tetrahymena</em> ribozyme at 3.1 A resolution.</strong><br />
+Su, Z., K. Zhang, K. Kappel, S. Li, M. Z. Palo, G. D. Pintilie, R. Rangan, B. Luo, Y. Wei, R. Das and W. Chiu <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/34381213" target="_blank">Nature 596 (7873): 603-607.(2021)</a><br /><br />
+<strong>[18] Sub-3-A cryo-EM structure of RNA enabled by engineered homomeric self-assembly.</strong><br />
+Liu, D., F. A. Thelot, J. A. Piccirilli, M. Liao and P. Yin <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/35501384" target="_blank">Nat Methods 19 (5): 576-585.(2022)</a><br /><br /></p>

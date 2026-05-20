@@ -1,0 +1,671 @@
+---
+layout: post
+title: "Hairpin"
+date: 2022-01-01 00:00:00
+author: Ribocentre team
+permalink: /docs/Hairpin.html
+---
+
+<p><strong>Rfam ID: <a href="https://rfam.org/family/RF00173">RF00173</a></strong> <br />
+    <strong><a href="https://rfam.org/family/RF04190">RF04190</a></strong> <br />
+    <strong><a href="https://rfam.org/family/RF04191">RF04191</a></strong> <br /></p>
+
+<h4 id="click-into-different-sections">click into different sections:</h4>
+
+<ul>
+  <li><a href="#timeline">Timeline</a></li>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#structure">Structure and mechanism</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+
+<h2 id="timeline">Timeline</h2>
+
+<hr />
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+
+</head>
+<style>
+   table {
+        border: 2px solid #f8f8ff;
+        border: 2px solid #767676;
+		    border: 2px solid #767676;
+		    border-radius: 5px;
+		    background-color: #fff;
+        }
+.timeline {
+  list-style: none;
+  padding: 10px 0 10px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 16px;
+  right: -12px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 10px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 10px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 40px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 48.5%;
+  margin-left: 0px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 0px;
+}
+
+</style>
+<!--<div class="container" width: 1026px></div>-->
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.nature.com/articles/323349a0" target="_blank" style="font-size:25px;">1986</a> Discovery<sup>[1]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/8508779" target="_blank" style="font-size:25px;">1993</a> Sequence/Secondary structure <sup>[2]</sup></h4>
+            </div>
+            <div class="timeline-body">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/11707414" target="_blank" style="font-size:25px;">2001</a> Essential role of an active-site G8 in hairpin ribozyme catalysis<sup>[6]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/12376595" target="_blank" style="font-size:25px;">2002</a> Crystal structure<sup>[7]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/15907933" target="_blank" style="font-size:25px;">2005</a> Essential role of an active-site A38 in hairpin ribozyme catalysis<sup>[8]</sup></h4>
+            </div>
+          </div>
+        </li>
+       <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/16411744" target="_blank" style="font-size:25px;">2006</a> Crystal structure<sup>[9]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/22958171" target="_blank" style="font-size:25px;">2012</a> Catalytic mechanism<sup>[10]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/30941784" target="_blank" style="font-size:25px;">2019</a> Engineering of hairpin ribozyme variants<sup>[11]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/33128282" target="_blank" style="font-size:25px;">2021</a> Situ activation of RNA substrates under reaction conditions amenable to catalysis by the hairpin ribozyme<sup>[12]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/34096583" target="_blank" style="font-size:25px;">2021</a> Expand the number of natural hairpin ribozymes<sup>[13]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/34751403" target="_blank" style="font-size:25px;">2022</a> ViroidDB: a database of viroids and viroid-like circular RNAs<sup>[14]</sup></h4>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"> <a href="https://www.ncbi.nlm.nih.gov/pubmed/15141216" target="_blank" style="font-size:25px;">2022</a> Engineering of hairpin ribozyme variants<sup>[15]</sup></h4>
+            </div>
+          </div>
+        </li>
+    </ul>
+
+</html>
+
+<h2 id="description">Description</h2>
+
+<hr />
+
+<font size="4">The GlmS ribozyme is predominantly present in gram-positive bacteria, and it is a riboswitch that inhibits the synthesis of glucosamine-6-phosphate. In addition, GlmS riboswitch is a self-cleft ribozyme located in the 5' untranslated region of the GlmS gene. Study on the structure and function of GlmS riboswitch will be beneficial to develop new targets for antibiotic action.</font>
+<p><br /></p>
+
+<h2 id="structure">Structure and mechanism</h2>
+
+<hr />
+
+<blockquote>
+  <p>2D representation</p>
+</blockquote>
+
+<p>Secondary structure depictions of the nucleolytic ribozymes with the scissile phosphates (cyan) arrowed, and the general acid (red) and base (blue) shown.</p>
+
+<table><tr>
+<td>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<style>
+   body {
+    width: 100%;
+    height: 100vh;
+}
+   button {
+   margin-right: 0px;
+}
+   .main-container {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+   .zoom-wrapper1 {
+    width: 450px;
+    height: 400px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+    <div class="main-container">
+        <div class="zoom-wrapper1">
+            <div class="zoom-area1">
+                <img src="/images/HairpinPic/Hairpin2D.svg" alt="drawing" style="width:135px;height:140px" />
+            </div>
+        </div>
+    </div>
+    <script src="/js/panzoom.js"></script>
+    <script type="text/javascript">
+      var zoomWraper1 = document.querySelector(".zoom-wrapper1");
+      var panzoom1 = Panzoom(document.querySelector(".zoom-area1"), {
+      maxScale: 6
+      });
+      zoomWraper1.addEventListener("wheel", panzoom1.zoomWithWheel);
+      panzoom1.zoom(300 / document.querySelector(".zoom-area1 img").height);
+      panzoom2.pan(0, 0);
+      </script>
+</td>
+<td>
+<link rel="stylesheet" type="text/css" href="/css/fornac.css" media="screen" />
+<div id="custom_colors"></div>
+<form onsubmit="return handleCustomColorApply()" class="optionsform">
+  <textarea id="CustomColorText" name="hide" textarea="" style="display:none;">
+    1-14:#00ADEF 100-113:#00ADEF 15-32:#ED1B23 48-65:#ED1B23 69-74:#009343 79-84:#009343 86-92:#FBAF3F 93-99:#FBAF3F 57:#8E0000  8:blue             
+  </textarea>
+</form>
+<meta charset="utf-8" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/d3.js"></script>
+    <script type="text/javascript" src="/js/demo/rsvfornac.js"></script>
+    <script type="text/javascript">
+      "use strict"
+      function customColorsContainer() {
+         let container = new fornac.FornaContainer("#custom_colors",
+                 {'applyForce': 1,'editable':'true', 'initialSize':[450,400]});
+         let options = {'structure': '(((((((((((((([[[[[[[[[[[[[[[[[[...............]]]]]]]]]]]]]]]]]]...((((((....)))))).[[[[[[[]]]]]]]))))))))))))))',
+             'sequence':             'GGAGAGAGAAGUCAACCAGAGAAACACACCAACCCAUUGCACUCCGGGUUGGUGGUAUAUUACCUGGUACGGGGGAAACUUCGUGGUGGCCGGGCCACCUGACAGUCCUCUCC'
+         };
+         container.addRNA(options.structure, options);
+         return container;
+     }
+     let cc = customColorsContainer();
+ 
+     function handleCustomColorApply() {
+       cc.addCustomColorsText(document.getElementById("CustomColorText").value);
+       return false;
+     }
+     handleCustomColorApply();
+ 
+  </script></td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>3D visualisation</p>
+</blockquote>
+
+<p>The structure and active center of the hairpin ribozyme in its natural four-way junction form. This representation was generated from PDB ID: 1M5O at 2.2 Å resolution.</p>
+
+<table><tr>
+<td><img src="/images/HairpinPic/Hairpin3D.png" alt="drawing" style="weight:1000px;height:435px" border="0" /></td>
+<td>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+      <title>PDBe Molstar - Helper functions</title>
+  
+      <!-- Molstar CSS & JS -->
+      <link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-3.0.0.css">
+      <script type="text/javascript" src="https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-plugin-3.0.0.js"></script>
+      <script>
+        function customize()
+        {
+          viewerInstance.canvas.setBgColor({r:255, g:255, b:255})
+        }
+        </script>
+  
+  
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .msp-plugin ::-webkit-scrollbar-thumb {
+            background-color: #474748 !important;
+        }
+        .viewerSection {
+          padding-top: 0px;
+        }
+        .controlsSection {
+          width: 300px;
+          display: flex;
+          float:left;
+          padding: 0px 0 0 0;
+          height:25px;
+        }
+        .controlBox {
+          border: 0px solid lightgray;
+          padding: 0px;
+          margin-bottom: 0px;
+        }
+        #myViewer{
+          float:left;
+          width:450px;
+          height: 455px;
+          position:relative;
+        }
+  </style>
+  </head>
+  <body onload="customize()">
+    <div class="controlsSection">
+        <button onclick="
+          var selectSections = [
+            {
+              struct_asym_id: 'B', 
+              start_residue_number: 1, 
+              end_residue_number: 14, 
+              color:{r:0,g:173,b:239},
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 8, 
+              end_residue_number: 21, 
+              color:{r:0,g:173,b:239}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 15, 
+              end_residue_number: 21, 
+              color:{r:0,g:173,b:239}
+            },
+            {
+              struct_asym_id: 'B', 
+              start_residue_number: 48, 
+              end_residue_number: 68, 
+              color:{r:237,g:27,b:35}
+            },
+            {
+              struct_asym_id: 'B', 
+              start_residue_number: 22, 
+              end_residue_number: 33, 
+              color:{r:237,g:27,b:35}
+            },
+            {
+              struct_asym_id: 'B', 
+              start_residue_number: 69, 
+              end_residue_number: 74, 
+              color:{r:0,g:147,b:67}
+            },
+            {
+              struct_asym_id: 'B', 
+              start_residue_number: 79, 
+              end_residue_number: 84, 
+              color:{r:0,g:147,b:67}
+            },
+            {
+              struct_asym_id: 'B', 
+              start_residue_number: 86, 
+              end_residue_number: 92, 
+              color:{r:251,g:175,b:63}
+            },
+            {
+              struct_asym_id: 'A', 
+              start_residue_number: 1, 
+              end_residue_number: 7, 
+              color:{r:251,g:175,b:63}
+            },
+            {
+              struct_asym_id: 'D', 
+              start_residue_number: 1, 
+              end_residue_number: 14, 
+              color:{r:0,g:173,b:239},
+            },
+            {
+              struct_asym_id: 'C', 
+              start_residue_number: 8, 
+              end_residue_number: 21, 
+              color:{r:0,g:173,b:239}
+            },
+            {
+              struct_asym_id: 'C', 
+              start_residue_number: 15, 
+              end_residue_number: 21, 
+              color:{r:0,g:173,b:239}
+            },
+            {
+              struct_asym_id: 'D', 
+              start_residue_number: 48, 
+              end_residue_number: 68, 
+              color:{r:237,g:27,b:35}
+            },
+            {
+              struct_asym_id: 'D', 
+              start_residue_number: 22, 
+              end_residue_number: 33, 
+              color:{r:237,g:27,b:35}
+            },
+            {
+              struct_asym_id: 'D', 
+              start_residue_number: 69, 
+              end_residue_number: 74, 
+              color:{r:0,g:147,b:67}
+            },
+            {
+              struct_asym_id: 'D', 
+              start_residue_number: 79, 
+              end_residue_number: 84, 
+              color:{r:0,g:147,b:67}
+            },
+            {
+              struct_asym_id: 'D', 
+              start_residue_number: 86, 
+              end_residue_number: 92, 
+              color:{r:251,g:175,b:63}
+            },
+            {
+              struct_asym_id: 'C', 
+              start_residue_number: 1, 
+              end_residue_number: 7, 
+              color:{r:251,g:175,b:63}
+            }
+          ]
+          viewerInstance.visual.select({ data: selectSections, nonSelectedColor: {r:255,g:255,b:255}})" style="float:right;height:25px;">Color Selection</button><br><br>
+  
+        <button button style="float: left;height:25px;" onclick="viewerInstance.visual.clearSelection()">Clear Selection</button><br><br>
+  
+    </div>
+  
+    <div class="viewerSection">
+  
+      <!-- Molstar container -->
+      <div id="myViewer"></div>
+    </div>
+    <script>
+  
+      //Create plugin instance
+      var viewerInstance = new PDBeMolstarPlugin();
+  
+      //Set options (Checkout available options list in the documentation)
+      var options = {
+        moleculeId: '1m5o',
+        hideControls: true
+      }
+      
+      //Get element from HTML/Template to place the viewer 
+      var viewerContainer = document.getElementById('myViewer');
+  
+      //Call render method to display the 3D view
+      viewerInstance.render(viewerContainer, options);
+      
+    </script>
+  </body>
+</html></td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>Catalytic centre</p>
+</blockquote>
+
+<p>The active site, with a vanadate replacing the scissile phosphate as a transition state analog. The geometry of the vanadium dictates that this structure approximates to that of a phosphorane with inline attack. G8 N1 and A38 N1 are hydrogen bonded to the O2′ and O5′ , respectively, shown by AQ4 broken lines.(left)<br /></p>
+
+<p>The hairpin ribozyme and a proposed reaction mechanism. Proposed mechanism of cleavage and ligation based on general acid-base catalysis. This depicts the transition state; the arrows show the flow of electrons for cleavage.(right)<br /></p>
+
+<table><tr>
+<td><img src="/images/HairpinPic/Hairpin-m1.png" alt="drawing" style="width:400px" border="1" px="" /></td>
+<td><img src="/images/HairpinPic/Hairpin-m2.png" alt="drawing" style="width:490px;height:270px" border="1" px="" /></td>
+</tr></table>
+<p><br /></p>
+
+<blockquote>
+  <p>Chemical mechanism</p>
+</blockquote>
+
+<p>The hairpin ribozyme employs general acid-base catalysis, using the nucleobases of G8 (in its deprotonated form) as general base to remove the proton from the 2'-OH nucleophile and A38 (in its protonated form) as the general acid to protonate the leaving group. The ribozyme (together with the VS ribozyme) is one of the standard G+A mechanism ribozymes.  In the crystal structure of a transition state analog <sup>[5]</sup> G8 N1 interacts with the O2' nucleophile and A38 N1 with the O5' leaving group as expected from the mechanism of cleavage.  The rates of cleavage and ligation of both ribozymes are strongly pH dependent<sup>[6,16]</sup>, consistent with proton transfer occurring in the transition state. Reaction rates increase at low pH, plateau around neutrality, and remain up to pH 9. No reduction in activity was found at the high pH end, i.e. no there is no bell-shaped pH dependence similar to that of the VS ribozyme. However, the upper pKa would not be detectable if ≥ 10. However, a bell-shaped pH dependence of reaction rate resulted when G8 was substituted with nucleobases of lower pKa such as 2,6-diaminopurine with a pKa around 5.4<sup> [6,10]</sup> and imidazole with a pKa around neutrality <sup>[17]</sup>. The assignment of G8 as general base and A38 as general acid in the cleavage reaction were confirmed by phosphorothiolate substitution experiments <sup>[10]</sup>.</p>
+
+<h2 id="references">References</h2>
+
+<hr />
+
+<p><strong>[1] Non-enzymatic cleavage and ligation of RNAs complementary to a plant virus satellite RNA.</strong><br />
+Buzayan, J. M., W. L. Gerlach and G. Bruening <br />
+<a href="https://www.nature.com/articles/323349a0" target="_blank">Nature.(1986)</a><br /><br /></p>
+
+<p><strong>[2] Essential nucleotide sequences and secondary structure elements of the hairpin ribozyme.</strong><br />
+Berzal-Herranz, A., S. Joseph, B. Chowrira, S. Butcher and J. Burke <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/8508779" target="_blank">The EMBO journal 12(6): 2567-2573.(1993)</a><br /><br /></p>
+
+<p><strong>[3] A unique mechanism for RNA catalysis: the role of metal cofactors in hairpin ribozyme cleavage.</strong><br />
+Hampel, A. and J. Cowan <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/9263639" target="_blank">Chemistry &amp; biology 4(7): 513-517.(1997)</a><br /><br /></p>
+
+<p><strong>[4] Mutational analysis of loops 1 and 5 of the hairpin ribozyme.</strong><br />
+Shippy, R., A. Siwkowski and A. Hampel <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/9425078" target="_blank">Biochemistry 37(2): 564-570.(1998)</a><br /><br /></p>
+
+<p><strong>[5] Crystal structure of a hairpin ribozyme-inhibitor complex with implications for catalysis.</strong><br />
+Rupert, P. and A. Ferré-D'Amaré <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/11298439" target="_blank">Nature 410(6830): 780-786.(2001)</a><br /><br /></p>
+
+<p><strong>[6] Functional involvement of G8 in the hairpin ribozyme cleavage mechanism.</strong><br />
+Pinard, R., K. Hampel, J. Heckman, D. Lambert, P. Chan, F. Major and J. Burke <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/11707414" target="_blank">The EMBO journal 20(22): 6434-6442.(2001)</a><br /><br /></p>
+
+<p><strong>[7] Transition state stabilization by a catalytic RNA.</strong><br />
+Rupert, P., A. Massey, S. Sigurdsson and A. Ferré-D'Amaré <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/12376595" target="_blank">Science (New York, N.Y.) 298(5597): 1421-1424.(2002)</a><br /><br /></p>
+
+<p><strong>[8] Role of an active site adenine in hairpin ribozyme catalysis.</strong><br />
+Kuzmin, Y., C. Da Costa, J. Cottrell and M. Fedor <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/15907933" target="_blank">Journal of molecular biology 349(5): 989-1010.(2005)</a><br /><br /></p>
+
+<p><strong>[9] Water in the active site of an all-RNA hairpin ribozyme and effects of Gua8 base variants on the geometry of phosphoryl transfer.</strong><br />
+Salter, J., J. Krucinska, S. Alam, V. Grum-Tokars and J. Wedekind <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/16411744" target="_blank">Biochemistry 45(3): 686-700.(2006)</a><br /><br /></p>
+
+<p><strong>[10] General acid-base catalysis mediated by nucleobases in the hairpin ribozyme.</strong><br />
+Kath-Schorr, S., T. Wilson, N. Li, J. Lu, J. Piccirilli and D. Lilley <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/22958171" target="_blank">Journal of the American Chemical Society 134(40): 16717-16724.(2012)</a><br /><br /></p>
+
+<p><strong>[11] Engineering of hairpin ribozyme variants for RNA recombination and splicing.</strong><br />
+Hieronymus, R. and S. Müller <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/30941784" target="_blank">Annals of the New York Academy of Sciences 1447(1): 135-143.(2019)</a><br /><br /></p>
+
+<p><strong>[12] Prebiotically Plausible RNA Activation Compatible with Ribozyme-Catalyzed Ligation.</strong><br />
+Song, E., E. Jiménez, H. Lin, K. Le Vay, R. Krishnamurthy and H. Mutschler <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/33128282" target="_blank">Angewandte Chemie (International ed. in English) 60(6): 2952-2957.(2021)</a><br /><br /></p>
+
+<p><strong>[13] Identification of over 200-fold more hairpin ribozymes than previously known in diverse circular RNAs.</strong><br />
+Weinberg, C., V. Olzog, I. Eckert and Z. Weinberg <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/34096583" target="_blank">Nucleic acids research 49(11): 6375-6388.(2021) </a><br /><br /></p>
+
+<p><strong>[14] ViroidDB: a database of viroids and viroid-like circular RNAs.</strong><br />
+Lee, B., U. Neri, C. Oh, P. Simmonds and E. Koonin <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/34751403" target="_blank">Nucleic acids research 50: D432-D438.(2022)</a><br /><br /></p>
+
+<p><strong>[15] RNA self-splicing by engineered hairpin ribozyme variants.</strong><br />
+Hieronymus, R., J. Zhu and S. Müller <br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/34928378" target="_blank">Nucleic acids research 50(1): 368-377.(2022)</a><br /><br /></p>
+
+<p><strong>[16] Observation of internal cleavage and ligation reactions of a ribozyme.</strong><br />
+Nahas, M.K., Wilson, T.J., Hohng, S., Jarvie, K., Lilley, D.M.J. and Ha, T.<br /> 
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/15475966" target="_blank">Nature Struct. Molec. Biol., 11, 1107-1113.(2004)</a><br /><br /></p>
+
+<p><strong>[17] Nucleobase catalysis in the hairpin ribozyme.</strong><br />
+Wilson, T.J., Ouellet, J., Zhao, Z.Y., Harusawa, S., Araki, L., Kurihara, T. and Lilley, D.M.J.<br />
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/16601203" target="_blank">RNA, 12, 980-987.(2006)</a><br /><br /></p>

@@ -3,12 +3,13 @@ email: "rnapuzzles@gzlab.ac.cn"
 description: >
   Ribocentre: a database of ribozymes
 baseurl: ""
-url: "https://www.ribocentre.org"
+url: "https://ribocentre.gznl.org"
 paper_title: "Ribocentre: a database of ribozymes"
 paper_url: "https://doi.org/10.1093/nar/gkac840"
 theme_key: "ribocentre"
-site_domain: "www.ribocentre.org"
+site_domain: "ribocentre.gznl.org"
 legacy_site_domains:
+  - "ribocentre.gznl.org"
   - "www.ribocentre.org"
   - "ribocentre.github.io"
 site_family_label: "Ribozyme database"

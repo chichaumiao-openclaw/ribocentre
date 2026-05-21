@@ -2,7 +2,7 @@
 
 Jekyll interface repo for Ribocentre.
 
-- Domain: `www.ribocentre.org`
+- Domain: `ribocentre.gznl.org`
 - Paper: Ribocentre: a database of ribozymes
 - Scope: web interface only
 - Data location: legacy scientific data remains in the old upstream repositories / local sources

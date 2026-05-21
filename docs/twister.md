@@ -356,7 +356,7 @@ permalink: /docs/twister.html
 </blockquote>
 <p>Crystal structure of the twister ribozyme. This representation was generated from PDB ID: 40JI at 2.34 Å resolution. Helices are differentiated by color. T1 and T2 are the two long-range tertiary interactions.</p>
 <table><tr>
-<td><img src="http://127.0.0.1:4000/images/twisterPic/twister3D.png" alt="drawing" style="height:440px" border="0" /></td>
+<td><img src="/images/twisterPic/twister3D.png" alt="drawing" style="height:440px" border="0" /></td>
 <td>
 <html>
   <html lang="en">

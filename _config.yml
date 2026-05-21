@@ -8,6 +8,9 @@ paper_title: "Ribocentre: a database of ribozymes"
 paper_url: "https://doi.org/10.1093/nar/gkac840"
 theme_key: "ribocentre"
 site_domain: "www.ribocentre.org"
+legacy_site_domains:
+  - "www.ribocentre.org"
+  - "ribocentre.github.io"
 site_family_label: "Ribozyme database"
 logo_path: "/images/ribocentre-logo.svg"
 

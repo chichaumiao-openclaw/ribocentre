@@ -1,0 +1,173 @@
+.legacy-page-shell .timeline,
+.legacy-page-shell ul.timeline {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 26px 0 34px;
+}
+
+.legacy-page-shell .timeline::before,
+.legacy-page-shell ul.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(8, 116, 196, 0.24), rgba(8, 116, 196, 0.08));
+  transform: translateX(-50%);
+}
+
+.legacy-page-shell .timeline > li,
+.legacy-page-shell ul.timeline > li {
+  position: relative;
+  margin: 0 0 26px;
+  min-height: 92px;
+}
+
+.legacy-page-shell .timeline > li::after,
+.legacy-page-shell ul.timeline > li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.legacy-page-shell .timeline-panel {
+  position: relative;
+  width: calc(50% - 44px);
+  float: left;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+}
+
+.legacy-page-shell .timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.legacy-page-shell .timeline-badge {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  border-radius: 999px;
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 0 3px rgba(8, 116, 196, 0.08);
+  background: #0874c4;
+  z-index: 1;
+}
+
+.legacy-page-shell .timeline-badge.primary {
+  background: #0874c4;
+}
+
+.legacy-page-shell .timeline-badge.success {
+  background: #2f9f58;
+}
+
+.legacy-page-shell .timeline-badge.warning {
+  background: #c06d23;
+}
+
+.legacy-page-shell .timeline-badge.danger {
+  background: #d43f3a;
+}
+
+.legacy-page-shell .timeline-heading,
+.legacy-page-shell .timeline-body {
+  margin: 0;
+}
+
+.legacy-page-shell .timeline-title {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
+.legacy-page-shell .timeline-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.legacy-page-shell .timeline-title a:hover {
+  text-decoration: underline;
+}
+
+.legacy-page-shell .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.legacy-page-shell .zoom-wrapper1 {
+  max-width: 100%;
+  overflow: auto;
+}
+
+.legacy-page-shell .zoom-area1 {
+  transform-origin: center center;
+}
+
+.legacy-page-shell .viewerSection {
+  display: block;
+  overflow: hidden;
+}
+
+.legacy-page-shell .controlsSection {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legacy-page-shell .controlsSection button,
+.legacy-page-shell .viewerSection button,
+.legacy-page-shell .main-container button {
+  border: 1px solid rgba(8, 116, 196, 0.34);
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 999px;
+  padding: 7px 12px;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.legacy-page-shell .controlsSection button:hover,
+.legacy-page-shell .viewerSection button:hover,
+.legacy-page-shell .main-container button:hover {
+  background: rgba(8, 116, 196, 0.08);
+}
+
+.legacy-page-shell #custom_colors,
+.legacy-page-shell #myViewer {
+  max-width: 100%;
+}
+
+.legacy-page-shell .optionsform {
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .legacy-page-shell .timeline::before,
+  .legacy-page-shell ul.timeline::before {
+    left: 14px;
+    transform: none;
+  }
+
+  .legacy-page-shell .timeline-panel,
+  .legacy-page-shell .timeline-inverted .timeline-panel {
+    width: calc(100% - 42px);
+    float: right;
+  }
+
+  .legacy-page-shell .timeline-badge {
+    left: 14px;
+    margin-left: -8px;
+  }
+}
